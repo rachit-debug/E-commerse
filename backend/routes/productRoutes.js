@@ -6,9 +6,9 @@ const { getAllProducts, getProductById, getProductsByCategory, createProduct, up
 const router = express.Router()
 
 router.get('/get-recent-products', getRecentProducts)
-router.get('/get-all-products', authMiddleware, getAllProducts)
-router.get('/get-product/:id', authMiddleware, getProductById)
-router.get('/get-product-by-category/:categoryId', authMiddleware, getProductsByCategory)
+router.get('/get-all-products', getAllProducts)
+router.get('/get-product/:id', getProductById)
+router.get('/get-product-by-category/:categoryId', getProductsByCategory)
 router.post('/create', authMiddleware, adminMiddleware, createProduct)
 router.put('/update/:id', authMiddleware, adminMiddleware, updateProduct)
 
