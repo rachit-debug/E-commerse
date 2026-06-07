@@ -1,4 +1,4 @@
-const API = '/api'
+const API = 'https://e-commerse-backend-vxjn.onrender.com/api'
 
 /** Load Razorpay checkout script once. */
 export function loadRazorpayScript() {
