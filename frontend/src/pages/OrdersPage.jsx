@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './OrdersPage.css'
 
-const API = '/api'
+const API = 'https://e-commerse-backend-vxjn.onrender.com/api'
 
 const STATUS_LABELS = {
   pending: 'Pending',

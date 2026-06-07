@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { loadRazorpayScript, createRazorpayOrder, verifyRazorpayCheckout } from '../utils/razorpay'
 import './CartPage.css'
 
-const API = '/api'
+const API = 'https://e-commerse-backend-vxjn.onrender.com/api'
 
 export default function CartPage() {
   const navigate = useNavigate()

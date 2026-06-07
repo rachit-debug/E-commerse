@@ -4,7 +4,7 @@ import AuthLayout from '../components/AuthLayout'
 import FormField from '../components/FormField'
 import './auth.css'
 
-const API = '/api'
+const API = 'https://e-commerse-backend-vxjn.onrender.com/api'
 
 export default function RegisterPage() {
   const navigate = useNavigate()

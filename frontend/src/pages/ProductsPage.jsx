@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import './ProductsPage.css'
 
-const API = '/api'
+const API = 'https://e-commerse-backend-vxjn.onrender.com/api'
 const CLIENT_LIMIT = 4 // for "All" client-side pagination
 
 function StarRating({ rating }) {

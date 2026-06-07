@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import FormField from '../components/FormField'
 import './AdminPage.css'
 
-const API = '/api'
+const API = 'https://e-commerse-backend-vxjn.onrender.com/api'
 
 const emptyCategoryForm = {
   title: '',
