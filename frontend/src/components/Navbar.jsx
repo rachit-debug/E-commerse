@@ -8,14 +8,14 @@ export default function Navbar() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('/api/user/get-user', { credentials: 'include' })
+    fetch('https://e-commerse-frontend-5pni.onrender.com/api/user/get-user', { credentials: 'include' })
       .then((r) => r.json())
       .then((data) => setUser(data.success ? data.user : null))
       .catch(() => setUser(null))
   }, [location.pathname])
 
   async function handleLogout() {
-    await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' })
+    await fetch('https://e-commerse-frontend-5pni.onrender.com/api/auth/logout', { method: 'POST', credentials: 'include' })
     setUser(null)
     navigate('/')
   }
