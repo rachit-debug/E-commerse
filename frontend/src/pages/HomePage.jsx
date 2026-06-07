@@ -103,12 +103,12 @@ export default function HomePage() {
   }, [])
 
   useEffect(() => {
-    fetch('/api/category/get-all-categories', { credentials: 'include' })
+    fetch('https://e-commerse-backend-vxjn.onrender.com/api/category/get-all-categories', { credentials: 'include' })
       .then((r) => r.json())
       .then((data) => setCategories(data.categories || []))
       .catch(() => {})
 
-    fetch('/api/product/get-recent-products')
+    fetch('https://e-commerse-backend-vxjn.onrender.com/api/product/get-recent-products')
       .then((r) => r.json())
       .then((data) => setRecentProducts(data.products || []))
       .catch(() => {})
