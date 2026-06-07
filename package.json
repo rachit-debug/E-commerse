@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:backend & npm run start:frontend",
+    "start:backend": "cd backend && npm run start",
+    "start:frontend": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
