@@ -4,11 +4,12 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 exports.logoutUser = (req, res) => {
+  const isProd = process.env.NODE_ENV === "production";
   res
     .clearCookie("token", {
       httpOnly: true,
-      secure: true,
-      sameSite: "none",
+      secure: isProd,
+      sameSite: isProd ? "none" : "lax",
     })
     .status(200)
     .json({ success: true, message: "Logged out successfully!" });
@@ -36,12 +37,10 @@ exports.registerUser = async (req, res) => {
 
     const userExists = await User.findOne({ email });
     if (userExists) {
-      res
-        .status(400)
-        .json({
-          success: false,
-          message: "User already exists, please register with different email.",
-        });
+      res.status(400).json({
+        success: false,
+        message: "User already exists, please register with different email.",
+      });
     }
 
     const hashedPassword = await bcrypt.hash(
@@ -86,12 +85,10 @@ exports.loginUser = async (req, res) => {
 
     const userExists = await User.findOne({ email });
     if (!userExists) {
-      res
-        .status(400)
-        .json({
-          success: false,
-          message: "User dosen't exist, please register!",
-        });
+      res.status(400).json({
+        success: false,
+        message: "User dosen't exist, please register!",
+      });
     }
 
     const isMatch = await bcrypt.compare(password, userExists.password);
@@ -111,11 +108,14 @@ exports.loginUser = async (req, res) => {
       { expiresIn: "1d" },
     );
 
+    const isProd = process.env.NODE_ENV === "production";
+
     res
       .cookie("token", token, {
         httpOnly: true,
-        secure: true,
-        sameSite: "none",
+        secure: isProd,
+        // In production use cross-site cookie; in local dev keep it working on http
+        sameSite: isProd ? "none" : "lax",
         maxAge: 24 * 60 * 60 * 1000,
       })
       .status(200)
