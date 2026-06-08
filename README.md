@@ -5,52 +5,55 @@ A modern and fully functional E-Commerce web application built using the MERN St
 ## 🚀 Features
 
 ### 👤 User Features
-- User Registration & Login
-- JWT Authentication & Authorization
-- Browse Products by Category
-- Product Search & Filtering
-- Product Details Page
-- Shopping Cart Functionality
-- Wishlist Management
-- Address Management
-- Secure Checkout Process
-- Razorpay Payment Integration
-- Order History & Tracking
-- User Profile Management
-- Fully Responsive Design
+
+* User Registration & Login
+* JWT Authentication & Authorization
+* Browse Products by Category
+* Product Search & Filtering
+* Product Details Page
+* Shopping Cart Functionality
+* Address Management
+* Secure Checkout Process
+* Razorpay Payment Integration
+* Order History
+* User Profile Management
+* Fully Responsive Design
 
 ### 🛠️ Admin Features
-- Admin Authentication
-- Dashboard Analytics
-- Product Management (Add, Edit, Delete)
-- Category Management
-- Inventory/Stock Management
-- Order Management
-- User Management
-- Sales Monitoring
-- Cloudinary Image Upload & Management
+
+* Admin Authentication
+* Dashboard Analytics
+* Product Management (Add, Edit, Delete)
+* Category Management
+* Inventory/Stock Management
+* Order Management
+* User Management
+* Sales Monitoring
+* Cloudinary Image Upload & Management
 
 ## 💻 Tech Stack
 
 ### Frontend
-- React.js
-- Redux Toolkit
-- React Router DOM
-- Tailwind CSS
-- Shadcn UI
-- Axios
+
+* React.js
+* React Router DOM
+* Tailwind CSS
+* Shadcn UI
+* Axios
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-- Multer
-- Cloudinary
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* Multer
+* Cloudinary
 
 ### Payment Gateway
-- Razorpay
+
+* Razorpay
 
 ## 🔐 Admin Demo Credentials
 
@@ -60,16 +63,15 @@ Password: `Alex@123`
 
 ## 📸 Key Highlights
 
-- Complete MERN Stack Architecture
-- Secure JWT Authentication
-- Role-Based Authorization
-- Razorpay Payment Gateway Integration
-- Cloudinary Media Storage
-- Redux Toolkit State Management
-- RESTful API Development
-- Responsive UI/UX Design
-- Admin Dashboard with Product & Order Management
-- Scalable and Production-Ready Structure
+* Complete MERN Stack Architecture
+* Secure JWT Authentication
+* Role-Based Authorization
+* Razorpay Payment Gateway Integration
+* Cloudinary Media Storage
+* RESTful API Development
+* Responsive UI/UX Design
+* Admin Dashboard with Product & Order Management
+* Scalable and Production-Ready Structure
 
 ## ⚙️ Installation
 
@@ -124,11 +126,11 @@ npm run dev
 
 ## 📈 Future Improvements
 
-- Product Reviews & Ratings
-- Coupon & Discount System
-- Email Notifications
-- Multi-Vendor Support
-- Advanced Analytics Dashboard
+* Product Reviews & Ratings
+* Coupon & Discount System
+* Email Notifications
+* Multi-Vendor Support
+* Advanced Analytics Dashboard
 
 ## 🤝 Contributing
 
@@ -141,3 +143,4 @@ This project is created for learning and portfolio purposes.
 ---
 
 ⭐ If you like this project, consider giving it a star on GitHub!
+
